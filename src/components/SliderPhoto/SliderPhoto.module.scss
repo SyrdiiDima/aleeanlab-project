@@ -1,0 +1,13 @@
+.container {
+  width: 236px;
+  height: 156px;
+  @media screen and (min-width: 1440px) {
+    object-position: 50% 50%;
+  }
+}
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}

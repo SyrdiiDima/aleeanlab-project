@@ -1,0 +1,245 @@
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+a,
+p,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 396px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 9px;
+  @media screen and (min-width: 1440px) {
+    padding: 20px;
+    width: 1400px;
+  }
+}
+
+.list {
+  position: relative;
+  height: 233px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background-color: #eff0f5;
+
+  @media screen and (min-width: 1440px) {
+    height: 100%;
+    padding: 24px 0px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08),
+      0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+  }
+  &__wrapper {
+    display: flex;
+  }
+
+  &__photo {
+    width: 66px;
+    height: 66px;
+    margin-top: 53px;
+    margin-left: 16px;
+    margin-right: 19px;
+    // background-color: red;
+    border-radius: 50%;
+    background-image: url('../pic/Hospital\ image.jpg');
+    @media screen and (min-width: 1440px) {
+      height: 85px;
+      width: 85px;
+      margin-top: 0px;
+      margin-right: 26px;
+    }
+  }
+
+  &__header {
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 1440px) {
+      margin-top: 0px;
+    }
+  }
+  &__star {
+    @media screen and (min-width: 1440px) {
+      position: absolute;
+      top: 73px;
+      right: 186px;
+    }
+  }
+  &__starIcon {
+    fill: #384564;
+    width: 10px;
+    height: 10px;
+    @media screen and (min-width: 1440px) {
+      width: 19px;
+      height: 18px;
+      fill: #38415d;
+    }
+  }
+
+  &__title {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #3a4562;
+    width: 278px;
+    margin-top: 14px;
+    @media screen and (min-width: 1440px) {
+      width: 712px;
+      margin-bottom: 8px;
+      margin-top: 0px;
+      font-family: 'Proxima Nova';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.2;
+
+      color: #3a4562;
+    }
+  }
+  &__department {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 5px;
+    color: #878d9d;
+  }
+  &__address {
+    margin-top: 7px;
+    align-items: flex-start;
+    display: flex;
+  }
+
+  &__addressIcon {
+    color: #d8d8d8;
+    width: 15px;
+    height: 18px;
+    margin-right: 8px;
+    @media screen and (min-width: 1440px) {
+      width: 13px;
+      height: 18px;
+      fill: rgba(216, 216, 216, 1);
+      margin-right: 11px;
+    }
+  }
+
+  &__addressName {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #878d9d;
+  }
+  &__posted {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-left: 100px;
+    @media screen and (min-width: 1440px) {
+      position: absolute;
+      bottom: 24px;
+      right: 16px;
+      color: #878d9d;
+      font-family: Proxima Nova;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: right;
+    }
+  }
+}
+.pagination {
+  position: relative;
+  width: 396px;
+  height: 31px;
+  background: #fff;
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  align-items: center;
+  padding-top: 9px;
+  @media screen and (min-width: 1440px) {
+    margin: auto;
+    padding-top: 12px;
+    height: 40px;
+    width: 515px;
+  }
+}
+
+.prevButton {
+  display: none;
+  @media screen and(min-width:1440px) {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 23px;
+    background: white;
+    border: none;
+
+    &::after {
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 50px;
+      content: '';
+      height: 31px;
+      width: 1px;
+
+      background: #dee3ef;
+      border-radius: 1px;
+    }
+  }
+}
+
+.nextButton {
+  display: none;
+  @media screen and(min-width:1440px) {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 23px;
+    background: #fff;
+    border: none;
+    &::after {
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 50px;
+      content: '';
+      height: 31px;
+      width: 1px;
+
+      background: #dee3ef;
+      border-radius: 1px;
+    }
+  }
+}
+.iconArrowLeft {
+  fill: #7d859c;
+  width: 25px;
+  height: 28px;
+  opacity: 0.5;
+}
+.iconArrowRigth {
+  fill: #7d859c;
+  width: 25px;
+  height: 28px;
+  opacity: 0.5;
+}
